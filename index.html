@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>One Page - Materialize</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+
+  <style>
+    section {
+      padding: 80px 0;
+    }
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 네비게이션 -->
+<nav class="blue darken-2">
+  <div class="nav-wrapper container">
+    <a href="#home" class="brand-logo">MySite</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#features">기능</a></li>
+      <li><a href="#contact">문의</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero blue lighten-5">
+  <div class="container center">
+    <h3>Materialize One Page</h3>
+    <p class="flow-text">
+      심플한 원페이지 템플릿입니다
+    </p>
+    <a href="#features" class="btn-large blue">
+      시작하기
+    </a>
+  </div>
+</section>
+
+<!-- 소개 -->
+<section id="about">
+  <div class="container">
+    <h4 class="center">소개</h4>
+    <p class="center">
+      이 페이지는 Materialize CSS를 이용한 기본 원페이지 예제입니다
+    </p>
+  </div>
+</section>
+
+<!-- 기능 -->
+<section id="features" class="grey lighten-4">
+  <div class="container">
+    <h4 class="center">기능</h4>
+
+    <div class="row">
+      <div class="col s12 m4 center">
+        <i class="material-icons large blue-text">flash_on</i>
+        <h6>빠른 구성</h6>
+        <p>CDN만으로 바로 사용 가능</p>
+      </div>
+
+      <div class="col s12 m4 center">
+        <i class="material-icons large blue-text">devices</i>
+        <h6>반응형</h6>
+        <p>모바일 · 태블릿 · PC 대응</p>
+      </div>
+
+      <div class="col s12 m4 center">
+        <i class="material-icons large blue-text">check_circle</i>
+        <h6>간단한 구조</h6>
+        <p>한 페이지 구성에 최적</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 문의 -->
+<section id="contact">
+  <div class="container">
+    <h4 class="center">문의</h4>
+
+    <div class="row">
+      <form class="col s12 m8 offset-m2">
+        <div class="input-field">
+          <input id="name" type="text">
+          <label for="name">이름</label>
+        </div>
+
+        <div class="input-field">
+          <input id="email" type="email">
+          <label for="email">이메일</label>
+        </div>
+
+        <div class="input-field">
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">메시지</label>
+        </div>
+
+        <div class="center">
+          <button class="btn blue" type="button">
+            보내기
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 푸터 -->
+<footer class="page-footer blue darken-2">
+  <div class="container center">
+    © 2025 MySite
+  </div>
+</footer>
+
+<!-- Materialize JS -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+
+</body>
+</html>
